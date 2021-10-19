@@ -1,0 +1,39 @@
+
+div{
+  padding: 15px;
+}
+#header_style {
+  background-color: coral;
+  text-align: center;
+}
+
+#footer_style {
+  background-color: burlywood;
+  text-align: center;
+  clear: both;
+}
+
+#nav_style {
+  float: left;
+  background-color: bisque;
+  width: 20%;
+  box-sizing: border-box;
+  height: 850px;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+
+#main_area_style {
+  background-color: chocolate;
+  float: right;
+  width: 80%;
+  box-sizing: border-box;
+  height: 850px;
+}
+
+img {
+  float: right;
+}
