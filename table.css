@@ -11,6 +11,10 @@ td h3{
   border: 3px solid black;
 }
 
+td {
+color : brown;
+}
+
 h1 {
   background-color:  dodgerblue;
   color: white;
