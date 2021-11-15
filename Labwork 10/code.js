@@ -43,11 +43,11 @@ function div () {
 }
 
 function be_sad() {
-    jQuery('img#face').attr('src', 'https://tenor.com/view/pleading-puppy-eyes-emoji-puppy-dog-eyes-pleading-emoji-gif-20694234')
+    jQuery('face').attr('src', 'https://tenor.com/view/pleading-puppy-eyes-emoji-puppy-dog-eyes-pleading-emoji-gif-20694234')
 }
 
 function be_happy() {
-    jQuery('img#face').attr('src', 'https://similarpng.com/happy-emoji-vector-on-transparent-background-png/')
+    jQuery('face').attr('src', 'https://similarpng.com/happy-emoji-vector-on-transparent-background-png/')
 }
 
 // func for buttons
