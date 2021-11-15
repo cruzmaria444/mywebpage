@@ -6,7 +6,7 @@
     jQuery('#result').html(z);
     //this func same as appending
     sampl = jQuery('#History').html()
-    jQuery('#History').html(sampl +  z +'<br>');
+    jQuery('#History').html(sampl +  z + '<br>');
 }
 //func for subtraction
 function sub () {
@@ -14,8 +14,7 @@ function sub () {
    y = parseInt(jQuery('#op2').html());
    z = x - y
    jQuery('#result').html(z);
-   sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' - ' y + ' = ' + z +'<br>');
+
 }
 //func for multiplication
 function mul () {
@@ -23,8 +22,7 @@ function mul () {
    y = parseInt(jQuery('#op2').html());
    z = x * y
    jQuery('#result').html(z);
-   sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' * ' y + ' = ' + z +'<br>');
+
 }
 //func for div
 function div () {
@@ -33,8 +31,7 @@ function div () {
    z = x / y
    jQuery('#result').html(z);
 
-   sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' / ' y + ' = ' + z +'<br>');
+   
 }
 // func for buttons
  function setup () {
