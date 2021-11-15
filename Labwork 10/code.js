@@ -10,8 +10,8 @@
 }
 //func for subtraction
 function sub () {
-   x = parseInt(jQuery('#op1').html());
-   y = parseInt(jQuery('#op2').html());
+   x = parseInt(jQuery('#op1').val());
+   y = parseInt(jQuery('#op2').val());
    z = x - y
    jQuery('#result').html(z);
 
@@ -21,8 +21,8 @@ function sub () {
 }
 //func for multiplication
 function mul () {
-   x = parseInt(jQuery('#op1').html());
-   y = parseInt(jQuery('#op2').html());
+   x = parseInt(jQuery('#op1').val());
+   y = parseInt(jQuery('#op2').val());
    z = x * y
    jQuery('#result').html(z);
 
@@ -32,8 +32,8 @@ function mul () {
 }
 //func for div
 function div () {
-   x = parseInt(jQuery('#op1').html());
-   y = parseInt(jQuery('#op2').html());
+   x = parseInt(jQuery('#op1').val());
+   y = parseInt(jQuery('#op2').val());
    z = x / y
    jQuery('#result').html(z);
 
