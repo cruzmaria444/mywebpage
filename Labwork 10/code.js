@@ -1,10 +1,9 @@
 
 add = function() {
-    x = parseInt(jQuery('#op1').html()); // html() is a getter
+    x = parseInt(jQuery('#op1').html());
     y = parseInt(jQuery('#op2').html());
-    // alert(x + y) //now, adition not concatenation anymore
-    z = x + y // processing
-    jQuery('#result').html(z); // html(inout) is a setter
+    z = x + y
+    jQuery('#result').html(z); 
 }
 setup = function() {
     jQuery('#trigger_the_add').click(add)
