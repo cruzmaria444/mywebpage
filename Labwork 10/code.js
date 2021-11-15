@@ -77,4 +77,5 @@ function be_sad() {
 
 }
 
-jQuery(document).ready(setup)
+//jQuery(document).ready(setup) or
+$(setup)
