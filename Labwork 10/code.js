@@ -7,6 +7,7 @@
     //this func same as appending
     sampl = jQuery('#History').html()
     jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
+    console.log(jQuery('#op1').val())
 }
 //func for subtraction
 function sub () {
