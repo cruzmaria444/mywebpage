@@ -43,11 +43,13 @@ function div () {
 }
 
 function show_history() {
-    jQuery ('#History').show();
+  //  jQuery ('#History').show(); or
+  jQuery ('#History').attr('style', '')
 }
 
 function hide_history() {
-    jQuery ('#History').hide();
+  //  jQuery ('#History').hide(); or
+  jQuery ('#History').attr('style', 'display:none')
 }
 
 /*
