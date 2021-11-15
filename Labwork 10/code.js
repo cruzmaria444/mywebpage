@@ -42,7 +42,7 @@ function div () {
     jQuery('#trigger_the_mul').click(mul)
     jQuery('#trigger_the_div').click(div)
 // jQuery  obj
-    jQuery('ul>li').html(jQuery('#op1').html())
+//    jQuery('ul>li').html(jQuery('#op1').html())
 }
 
 jQuery(document).ready(setup)
