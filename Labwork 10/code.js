@@ -16,7 +16,7 @@ function sub () {
    jQuery('#result').html(z);
 
    sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
+   jQuery('#History').html(sampl + x + ' - ' + y + ' = ' + z + '<br>');
 
 }
 //func for multiplication
@@ -27,7 +27,7 @@ function mul () {
    jQuery('#result').html(z);
 
    sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
+   jQuery('#History').html(sampl + x + ' * ' + y + ' = ' + z + '<br>');
 
 }
 //func for div
@@ -38,7 +38,7 @@ function div () {
    jQuery('#result').html(z);
 
    sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
+   jQuery('#History').html(sampl + x + ' / ' + y + ' = ' + z + '<br>');
 
 }
 // func for buttons
