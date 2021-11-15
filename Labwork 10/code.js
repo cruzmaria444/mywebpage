@@ -6,7 +6,7 @@
     jQuery('#result').html(z);
     //this func same as appending
     sampl = jQuery('#History').html()
-    jQuery('#History').html(sampl +  z + '<br>');
+    jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
 }
 //func for subtraction
 function sub () {
@@ -31,7 +31,7 @@ function div () {
    z = x / y
    jQuery('#result').html(z);
 
-   
+
 }
 // func for buttons
  function setup () {
