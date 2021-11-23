@@ -59,7 +59,9 @@ function hide_history() {
   jQuery ('#History').attr('style', 'display:none')
 }
 
-
+function delete_ () {
+  $(this).parent().hide();
+}
 
 
 
@@ -74,6 +76,7 @@ function hide_history() {
 // to show and hide history
     jQuery('#show').click(show_history);
     jQuery('#hide').click(hide_history);
+//
     jQuery('body').on('click','#delete', delete_);
 }
 
