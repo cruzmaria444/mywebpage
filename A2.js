@@ -60,12 +60,8 @@ function hide_history() {
 }
 
 function delete_ () {
-  $(this).parent().hide();
+  $(this).parent().remove();
 }
-
-
-
-
 
 // func for buttons
  function setup () {
