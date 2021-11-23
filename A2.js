@@ -1,7 +1,7 @@
   //func for addition
  function add () {
-    x = parseInt(jQuery('#op1').val());
-    y = parseInt(jQuery('#op2').val());
+    x = parseInt($('#op1').val());
+    y = parseInt($('#op2').val());
     z = x + y
     $('#result').html(z);
 
