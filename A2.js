@@ -68,7 +68,7 @@ function hide_history() {
 // to show and hide history
     jQuery('#show').click(show_history);
     jQuery('#hide').click(hide_history);
-    jQuery('body').click(hide_history);
+    jQuery('body').on(click(hide_history);
 }
 
 //jQuery(document).ready(setup) or
