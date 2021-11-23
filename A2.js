@@ -4,9 +4,15 @@
     y = parseInt(jQuery('#op2').val());
     z = x + y
     jQuery('#result').html(z);
+
+    sampl = '<span id=" ">' + x + ' + ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
+   jQuery('#History').append( sampl );
+}
+
+
     //this func same as appending
-    sampl = jQuery('#History').html()
-    jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
+    // sampl = jQuery('#History').html()
+    // jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
     //console.log (jQuery('#result').val());
 }
 //func for subtraction
@@ -68,7 +74,7 @@ function hide_history() {
 // to show and hide history
     jQuery('#show').click(show_history);
     jQuery('#hide').click(hide_history);
-    jQuery('body').on(click(hide_history);
+    jQuery('body').on('click','#delete', delete_);
 }
 
 //jQuery(document).ready(setup) or
