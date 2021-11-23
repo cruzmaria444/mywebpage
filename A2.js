@@ -5,10 +5,8 @@
     z = x + y
     jQuery('#result').html(z);
 
-    sampl = '<span id=" ">' + x + ' + ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
-   jQuery('#History').append( sampl );
+    $('#history').append(`<div id="hist"> ${x} + ${y} = ${z} <button id="delete">Delete</button> </div>`);
 }
-
 
     //this func same as appending
     // sampl = jQuery('#History').html()
