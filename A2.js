@@ -16,10 +16,10 @@
 }
 //func for subtraction
 function sub () {
-   x = parseInt(jQuery('#op1').val());
-   y = parseInt(jQuery('#op2').val());
+   x = parseInt($('#op1').val());
+   y = parseInt($('#op2').val());
    z = x - y
-   jQuery('#result').html(z);
+   $('#result').html(z);
 
    sampl = '<span id=" ">' + x + ' - ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
    $('#History').append( sampl );
@@ -28,10 +28,10 @@ function sub () {
 }
 //func for multiplication
 function mul () {
-   x = parseInt(jQuery('#op1').val());
-   y = parseInt(jQuery('#op2').val());
+   x = parseInt($('#op1').val());
+   y = parseInt($('#op2').val());
    z = x * y
-   jQuery('#result').html(z);
+   $('#result').html(z);
 
    sampl = '<span id=" ">' + x + ' * ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
    $('#History').append( sampl );
@@ -39,10 +39,10 @@ function mul () {
 }
 //func for div
 function div () {
-   x = parseInt(jQuery('#op1').val());
-   y = parseInt(jQuery('#op2').val());
+   x = parseInt($('#op1').val());
+   y = parseInt($('#op2').val());
    z = x / y
-   jQuery('#result').html(z);
+   $('#result').html(z);
 
    sampl = '<span id=" ">' + x + ' / ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
    $('#History').append( sampl );
@@ -50,12 +50,12 @@ function div () {
 
 function show_history() {
   //  jQuery ('#History').show(); or
-  jQuery ('#History').attr('style', '')
+  $('#History').attr('style', '')
 }
 
 function hide_history() {
   //  jQuery ('#History').hide(); or
-  jQuery ('#History').attr('style', 'display:none')
+  $('#History').attr('style', 'display:none')
 }
 
 function delete_() {
@@ -76,14 +76,14 @@ function be_sad() {
 
 // func for buttons
  function setup () {
-    jQuery('#trigger_the_add').click(add);
-    jQuery('#trigger_the_sub').click(sub);
-    jQuery('#trigger_the_mul').click(mul);
-    jQuery('#trigger_the_div').click(div);
+    $('#trigger_the_add').click(add);
+    $('#trigger_the_sub').click(sub);
+    $('#trigger_the_mul').click(mul);
+    $('#trigger_the_div').click(div);
     // jQuery('#happy').click(be_happy);
     // jQuery('#sad').click(be_sad);
-    jQuery('#show').click(show_history);
-    jQuery('#hide').click(hide_history);
+    $('#show').click(show_history);
+    $('#hide').click(hide_history);
     // jQuery for delete
     $('body').on('click', '#delete',delete_);
 }
