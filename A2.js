@@ -21,7 +21,8 @@ function sub () {
    z = x - y
    jQuery('#result').html(z);
 
-   $('#history').append(`<div id="hist"> ${x} - ${y} = ${z} <button id="delete">Delete</button> </div>`);
+   sampl = '<span id=" ">' + x + ' - ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
+   $('#History').append( sampl );
 
 
 }
@@ -32,7 +33,8 @@ function mul () {
    z = x * y
    jQuery('#result').html(z);
 
-
+   sampl = '<span id=" ">' + x + ' * ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
+   $('#History').append( sampl );
 
 }
 //func for div
@@ -42,9 +44,8 @@ function div () {
    z = x / y
    jQuery('#result').html(z);
 
-   sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' / ' + y + ' = ' + z + '<br>');
-
+   sampl = '<span id=" ">' + x + ' / ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
+   $('#History').append( sampl );
 }
 
 function show_history() {
@@ -59,7 +60,6 @@ function hide_history() {
 
 function delete_() {
   $(this).parent().remove();
-
 }
 
 /*
