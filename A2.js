@@ -54,7 +54,7 @@ function show_history() {
 
 function hide_history() {
   //  jQuery ('#History').hide(); or
-  jQuery ('#History').attr('style', 'display:none')
+  $ ('#History').attr('style', 'display:none')
 }
 
 function delete_ () {
@@ -63,15 +63,15 @@ function delete_ () {
 
 // func for buttons
  function setup () {
-    jQuery('#trigger_the_add').click(add);
-    jQuery('#trigger_the_sub').click(sub);
-    jQuery('#trigger_the_mul').click(mul);
-    jQuery('#trigger_the_div').click(div);
+    $('#trigger_the_add').click(add);
+    $('#trigger_the_sub').click(sub);
+    $('#trigger_the_mul').click(mul);
+    $('#trigger_the_div').click(div);
 // to show and hide history
-    jQuery('#show').click(show_history);
-    jQuery('#hide').click(hide_history);
+    $('#show').click(show_history);
+    $('#hide').click(hide_history);
 //
-    jQuery('body').on('click','#delete', delete_);
+    $('body').on('click','#delete', delete_);
 }
 
 //jQuery(document).ready(setup) or
