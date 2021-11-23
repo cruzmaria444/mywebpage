@@ -3,10 +3,15 @@
     x = parseInt(jQuery('#op1').val());
     y = parseInt(jQuery('#op2').val());
     z = x + y
-    jQuery('#result').html(z);
+    $('#result').html(z);
+
+    sampl = '<span id=" ">' + x + ' + ' + y + ' = '+ z + '<button id="delete"> delete</button>' + '<br>' + '</span>';
+    $('#History').append( sampl );
+
+
     //this func same as appending
-    sampl = jQuery('#History').html()
-    jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
+    // sampl = jQuery('#History').html()
+    // jQuery('#History').html(sampl + x + ' + ' + y + ' = ' + z + '<br>');
     //console.log (jQuery('#result').val());
 }
 //func for subtraction
@@ -16,8 +21,8 @@ function sub () {
    z = x - y
    jQuery('#result').html(z);
 
-   sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' - ' + y + ' = ' + z + '<br>');
+   $('#history').append(`<div id="hist"> ${x} - ${y} = ${z} <button id="delete">Delete</button> </div>`);
+
 
 }
 //func for multiplication
@@ -27,8 +32,7 @@ function mul () {
    z = x * y
    jQuery('#result').html(z);
 
-   sampl = jQuery('#History').html()
-   jQuery('#History').html(sampl + x + ' * ' + y + ' = ' + z + '<br>');
+
 
 }
 //func for div
@@ -53,6 +57,11 @@ function hide_history() {
   jQuery ('#History').attr('style', 'display:none')
 }
 
+function delete_() {
+  $(this).parent().remove();
+
+}
+
 /*
 function be_happy() {
     jQuery('img#face').attr('src', 'https://images.unsplash.com/photo-1509909756405-be0199881695?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80')
@@ -75,7 +84,8 @@ function be_sad() {
     // jQuery('#sad').click(be_sad);
     jQuery('#show').click(show_history);
     jQuery('#hide').click(hide_history);
-
+    // jQuery for delete
+    $('body').on('click', '#delete',delete_);
 }
 
 //jQuery(document).ready(setup) or
