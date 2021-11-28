@@ -1,22 +1,21 @@
-function procces_(data){
-  jQuery('#city_temperature').html(data.main.temp)
+
+function process_(data) {
+  console.log(data);
+  $('#city_temperature').html(data.main.temp)
+  $('#city_weather').html(data.weather[0].main)
 }
 
-function AJAX_GET(){
-  city_name_input = jQuery('#city_name_input').val()
-  $.ajax(
-    {
-      {
-        url:`https://api.openweathermap.org/data/2.5/weather?q=${city_name_input}&appid=b660f3402c54cb9a9c48f89c35249e5c&unit=metric`,
-        type:'GET',
-        success: procces_
-
-      }
-    }
-  )
+function call_ajax() {
+  $.ajax({
+    url: `https://api.openweathermap.org/data/2.5/weather?q=${jQuery('#city_name_input').val()}&appid=8f4372e59d9d1d5c204a8053af0d9d4a&units=metric`,
+    type: 'GET',
+    success: process_
+  })
 }
 
-function setup(){
-  $('#get_temperature_button').click(AJAX_GET);
+function setup() {
+  $('#get_temperature_button').click(call_ajax)
+  $('#get_weather_button').click(call_ajax)
 }
-$(document).ready(setup);
+
+$(document).ready(setup)
