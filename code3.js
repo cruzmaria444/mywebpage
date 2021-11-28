@@ -20,4 +20,4 @@ function AJAX_GET(){
 function setup(){
   $('#get_temperature_button').click(AJAX_GET);
 }
-$(document).ready(setup);
+$(document).ready(setup)
