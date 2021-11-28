@@ -1,7 +1,6 @@
 
 function process_(data) {
   $('#city_temperature').html(data.main.temp)
-  $('#city_weather').html(data.weather[0].main)
   console.log(data);
 }
 
