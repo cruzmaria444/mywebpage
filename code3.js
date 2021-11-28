@@ -1,8 +1,8 @@
 
 function process_(data) {
-  console.log(data);
   $('#city_temperature').html(data.main.temp)
   $('#city_weather').html(data.weather[0].main)
+  console.log(data);
 }
 
 function get_ajax() {
