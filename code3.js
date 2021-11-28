@@ -15,7 +15,7 @@ function get_ajax() {
 
 function setup() {
   $('#get_temperature_button').click(get_ajax)
-  $('#get_weather_button').click(get_ajax)
+
 }
 
 $(setup)
