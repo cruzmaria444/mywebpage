@@ -1,9 +1,8 @@
-
 function procces_(data){
   jQuery('#city_temperature').html(data.main.temp)
 }
 
-function get_ajax(){
+function AJAX_GET(){
   city_name_input = jQuery('#city_name_input').val()
   $.ajax(
     {
@@ -18,6 +17,6 @@ function get_ajax(){
 }
 
 function setup(){
-  $('#get_temperature_button').click(get_ajax)
+  $('#get_temperature_button').click(AJAX_GET);
 }
-$(document).ready(setup)
+$(document).ready(setup);
