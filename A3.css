@@ -1,0 +1,11 @@
+
+.thumb > img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.bigimg > img {
+  width: 800px;
+  height: 600px;
+}
